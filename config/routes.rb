@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  # post "/api/v1/login", to: "api/v1/sessions#create"
+
   namespace :api do
     namespace :v1 do
-      get "/login", to: "sessions#create"
+      post "/login", to: "sessions#create"
       resources :genres
       resources :movies
       resources :users
