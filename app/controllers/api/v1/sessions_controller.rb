@@ -2,7 +2,7 @@ class Api::V1::SessionsController < ApplicationController
     def create
         user = User.find_by(email: params[:session][:email])
 
-        if user && user.authenticate(params[:password])
+        if user && user.authenticate(params[:session][:password])
             session[:user_id] = user.id
             render json: user
         else
@@ -19,7 +19,6 @@ class Api::V1::SessionsController < ApplicationController
             render json: {
                 notice: 'No one logged in'
             }
-        end
         end
     end
 end
