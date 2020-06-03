@@ -31,6 +31,9 @@ gem 'rack-cors'
 #Fast JSON API
 gem 'fast_jsonapi'
 
+#Dotenv-rails
+gem 'dotenv-rails'
+
 #rest-client is a simple HTTP and REST client for Ruby, inspired by the Sinatra microframework style of specifying actions: get, put, post, delete.
 gem 'rest-client', '~> 2.1'
 
