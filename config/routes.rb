@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       post "/signup", to: "users#create"
       get "/get_current_user", to: "sessions#get_current_user"
       get "/popular", to: "movies#popular"
+      get '/top_rated', to: 'movies#top_rated' 
       resources :genres
       resources :movies
       resources :users

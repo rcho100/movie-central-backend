@@ -8,4 +8,10 @@ class Api::V1::MoviesController < ApplicationController
         render json: parsed_response['results'], status: :ok
     end
 
+    def top_rated
+        response = RestClient.get("https://api.themoviedb.org/3/movie/top_rated?api_key=#{MOVIE_API_KEY}&language=en-US")
+        parsed_response = JSON.parse(response)
+    
+        render json: parsed_response["results"]
+    end 
 end
