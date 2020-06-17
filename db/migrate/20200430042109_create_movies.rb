@@ -1,7 +1,7 @@
 class CreateMovies < ActiveRecord::Migration[5.2]
   def change
     create_table :movies do |t|
-      t.string :movieID
+      t.integer :id_from_api
       t.string :poster_path
       t.string :backdrop_path
       t.string :genres

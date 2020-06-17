@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2020_05_01_211534) do
   end
 
   create_table "movies", force: :cascade do |t|
-    t.string "movieID"
+    t.integer "id_from_api"
     t.string "poster_path"
     t.string "backdrop_path"
     t.string "genres"
