@@ -4,7 +4,6 @@ class CreateMovies < ActiveRecord::Migration[5.2]
       t.integer :id_from_api
       t.string :poster_path
       t.string :backdrop_path
-      t.string :genres
       t.string :overview
       t.string :release_date
       t.integer :runtime

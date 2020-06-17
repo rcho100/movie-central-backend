@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 2020_05_01_211534) do
   enable_extension "plpgsql"
 
   create_table "genres", force: :cascade do |t|
-    t.string "name"
     t.integer "id_from_api"
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -35,7 +35,6 @@ ActiveRecord::Schema.define(version: 2020_05_01_211534) do
     t.integer "id_from_api"
     t.string "poster_path"
     t.string "backdrop_path"
-    t.string "genres"
     t.string "overview"
     t.string "release_date"
     t.integer "runtime"
