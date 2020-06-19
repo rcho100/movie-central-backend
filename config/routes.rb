@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       post "/login", to: "sessions#create"
       delete "/logout", to: "sessions#destroy"
       post "/signup", to: "users#create"
+      post "/add_movie", to: "user_movies#create"
       get "/get_current_user", to: "sessions#get_current_user"
       get "/popular", to: "movies#popular"
       get '/top_rated', to: 'movies#top_rated' 
