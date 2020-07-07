@@ -1,24 +1,36 @@
-# README
+# Movie Central Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Movie Central is a web app that allows users to browse through currently popular movies and also through currently top rated movies. Users can also create an account to add movies to their own watchlist and grow their collection.
 
-Things you may want to cover:
+This repo contains the Rails API backend portion of the web application. Data is also retrieved in the Rails backend from the TMDB (The Movie DB) API for current up to date lists on movies. https://www.themoviedb.org/documentation/api
 
-* Ruby version
+For the repo to the React & Redux frontend portion of this application, please go to: https://github.com/rcho100/movie-central-frontend
 
-* System dependencies
+## Installation & Usage
 
-* Configuration
+Clone this repo and run bundle install to load the Ruby gems and dependencies. Have a Postgres server running. Then run rails db:create to create the database and rails db:migrate to migrate the migration files. Then run rails s to start the server for the backend.
 
-* Database creation
+Please see the above link for the frontend portion of this app and clone down the repo. Run npm install to install and npm start to start the server for the frontend.
 
-* Database initialization
+## Built With
 
-* How to run the test suite
+For the Frontend:
 
-* Services (job queues, cache servers, search engines, etc.)
+- React
+- Redux
+- React Router
+- React-Bootsrap
+- CSS
 
-* Deployment instructions
+For the Backend:
 
-* ...
+- Ruby
+- Rails API
+- Bcrypt
+- Fast JSON API
+- Session Cookies
+- PostgreSQL
+
+## Contributing
+
+Issues and pull requests are welcome at https://github.com/rcho100/movie-central-backend.
